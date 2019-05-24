@@ -18,8 +18,8 @@ This program has the following features:
 * Read all flair puck values
 * Use room temperature of a puck as state of HA entitiy
 * Use sensing info(date,humidity,light,room pressure) as attribute of HA entitiy
-~~Set puck values (room occupied, set_point_c, clear hold)~~
-~~auto timezone correction of time/dates~~
+* ~~Set puck values (room occupied, set_point_c, clear hold)~~
+* ~~auto timezone correction of time/dates~~
 ## Pre-Requisites
 To use this program, you will need to have requested access to the Flair API (email hello@flair.co) you will get:
 
