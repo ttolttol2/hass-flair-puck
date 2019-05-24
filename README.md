@@ -1,7 +1,7 @@
-Home Assistant component for Flair Puck
-=======================================
+Home Assistant Custom Component for Flair Puck
+==============================================
 see https://flair.co for details of this smart device control system.
-Tested on raspberry pi 3B+,  **no guarantees** on anything else!
+Tested on raspberry pi 3B+, **no guarantees** on anything else!
 ``` 
 arch            armv7l
 dev             false
@@ -17,9 +17,9 @@ virtualenv      true
 This program has the following features:
 * Read all flair puck values
 * Use room temperature of a puck as state of HA entitiy
-* sensing date, humidity, light, room pressure as attribute of HA entitiy
-~~* Set puck values (room occupied, set_point_c, clear hold)~~
-~~* auto timezone correction of time/dates~~
+* Use sensing info(date,humidity,light,room pressure) as attribute of HA entitiy
+~~Set puck values (room occupied, set_point_c, clear hold)~~
+~~auto timezone correction of time/dates~~
 ## Pre-Requisites
 To use this program, you will need to have requested access to the Flair API (email hello@flair.co) you will get:
 
@@ -27,8 +27,8 @@ To use this program, you will need to have requested access to the Flair API (em
 * CLIENT_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 You will also need to know your home_id - this is a number (usually 4 digits) identifying your home.
-In the Flair web page showing your devices, it's usually the number at the end of the URL. **you can find puck's name also.**
-eg https://my.flair.co/h/1234 where 1234 is your home id.
+In the Flair web page showing your devices, it's usually the number at the end of the URL. eg https://my.flair.co/h/1234 where 1234 is your home id.
+**you can find puck's name also.**
 ## Install & Configure
 Make sure you have the Flair API Client installed (https://github.com/flair-systems/flair-api-client-py)
 
