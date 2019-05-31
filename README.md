@@ -44,23 +44,36 @@ $ ls ~/.homeassistant/custom_components/flair
 README.md  __init__.py  manifest.json  sensor.py
 ```
 In your configuration.yaml:
-```
+```yaml
 sensor:
   - platform: flair
-    client_id: "yours"
-    client_secret: "yours"
-    home_id: "your home id"
-    name: "your puck name"
-    unit_of_measurement: "°C"
+    client_id: YOUR_CLIENT_ID
+    client_secret: YOUR_CLIENT_SECRET
+    home_id: YOUR_HOME_ID
+    scan_interval: 60
+    name: YOUR_PUCK_NAME
+    monitored_conditions:
+      - temperature
+      - light
+      - humidity
 ```
 Restart the Home Assistant services.
 Now you can use puck's sensing data on the hass frontend.
 ```
+#like this
+sensor.puck_10fl_458b_temperature
+sensor.puck_10fl_458b_light
+sensor.puck_10fl_458b_humidity
+```
+```json
+10fl-c5a3: {
+  "online": false
+}
 10fl-458b: {
-  "Temperature": 24.1,
-  "date": "2019-05-24T02:04:34.107468+00:00",
-  "light": 152,
-  "Humidity": 54,
-  "Pressure": 100.51
+  "Pressure": 100.27,
+  "light": 288,
+  "date": "2019-05-31T06:39:30.958266+00:00",
+  "Temperature": 25.24,
+  "Humidity": 49
 }
 ```
