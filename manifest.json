@@ -1,9 +1,11 @@
 {
   "domain": "flair",
   "name": "flair",
+  "version": "1.0.1",
   "documentation": "",
   "dependencies": [],
   "codeowners": [],
-  "requirements": []
+  "requirements": [],
+  "iot_class": "cloud_polling",
 }
 
